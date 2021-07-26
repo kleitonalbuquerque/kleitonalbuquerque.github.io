@@ -9,16 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
-  <style>
-    .zoom {
-      transition: transform .2s; /* Animation */
-      margin: 0 auto;
-    }
-
-    .zoom:hover {
-      transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
-  </style>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
 <body>
@@ -62,20 +53,25 @@
     </div>
   </section> -->
 
-  <section class="section contact-sec">
-    <div class="section-header" style="color: #fff">Contact US</div>
+  <!-- <section class="section contact-sec">
+    <div class="section-header" style="color: #fff; padding-top: 40px;">Contact US</div>
     <div class="contact-container">
       <form id="contact-form" action="mailto:kleiton2102@gmail.com" method="post">
         <label for="name">Your Name</label>
-        <input type="text" name="name" placeholder="Full Name">
+        <input id="name" type="text" name="name" placeholder="Full Name" required>
         <label for="name">Your Email</label>
-        <input type="email" name="email" placeholder="Email Address">
+        <input id="email" type="email" name="email" placeholder="Email Address" required>
         <label for="name">Your Message</label>
-        <textarea name="content" id="contact-content" placeholder="Your Message..."></textarea>
-        <input type="submit" value="Submit now" onclick="reloadPage()" />
+        <textarea id="message" name="content" id="contact-content" placeholder="Your Message..." required></textarea>
+        <input type="submit" id="send" form="name" value="Submit now" onclick="reloadPage()" />
       </form>
     </div>
-  </section>
+  </section>   -->
+
+  <footer>
+    <a href="https://github.com/kleitonalbuquerque" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/kleitonads/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </footer>
 
 </body>
 <script src="./js/index.js"></script>
